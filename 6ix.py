@@ -1410,7 +1410,18 @@ async def vpn(beaters):
         embed.add_field(name="__Payment Options__", value="``We Accept, Paypal,Cashapp,Venmo.``", inline=False)   
         embed.set_footer(text="Copyright © Devil#0420 ", icon_url=ctx.author.avatar_url)
         await beaters.send(embed=embed)
-        await beaters.message.delete()    
+        await beaters.message.delete()  
+	
+@SIX.command(pass_context=True)
+async def info(beaters, member: discord.Member = None):
+        embed = discord.Embed(title=f"User Info <3", color=0x000000)
+        embed.add_field(name="`User ID:`", value=member.id, inline=False)
+        embed.add_field(name="`Name:`", value=member.display_name, inline=False)
+        embed.add_field(name="`Creation Date:`", value=member.created_at.strftime("%a, %d %B %Y, %I:%M %p"), inline=False)
+        embed.add_field(name="`Bot Check`", value=member.bot, inline=False)
+        embed.set_thumbnail(url=member.avatar_url)
+        embed.set_footer(text="6ix Selfbot <3", icon_url=ctx.author.avatar_url)
+        await beaters.message.delete()	
 
 @SIX.command(aliases=['ri', 'role'])
 async def roleinfo(ctx, *, role: discord.Role):
