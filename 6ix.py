@@ -2190,7 +2190,7 @@ async def mac(ctx, mac):
 @SIX.command()
 async def hack(ctx, user: discord.Member):
     await ctx.message.delete()
-    PORN = ['Hacking', 'getting '+user.mention+' info', 'this goofy nigga lives in his granny basement', 'almost done hacking...', 'his ip 195.58.156.21', 'sending to the 6ix head quarters...', 'done.']
+    PORN = ['Hacking', 'Finding '+user.mention+' Discord login...', '(2fa bypassed)', 'Email: thecatgrabber34@gmail.com', 'Password: Minecraft324', 'Discord 2fa (Disabled)', 'Getting '+user.mention+' IP Address...', 'IP: 192.165.23.432', 'Getting '+user.mention+' Address...','Address: 234 6ixOnTop Ave. 6ix Top 34654','fetching dms with closest friends (if there are any friends at all)','Last DM: "6ix Is On My Account OMG"', 'Injecting 6ix virus into discriminator ', 'almost done hacking...', 'Downloading Info To 6ix...', 'Reporting account to discord for breaking TOS..', 'Done... Account should be disabled...', 'done.']
     message = await ctx.send(PORN[0])
     await asyncio.sleep(3)
     for _next in PORN[1:]:
