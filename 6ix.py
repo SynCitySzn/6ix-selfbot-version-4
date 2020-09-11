@@ -9,7 +9,6 @@ from discord.ext import (
     commands,
     tasks
 )
-from discord.ext import (commands,tasks)
 from bs4 import BeautifulSoup as bs4
 from urllib.parse import urlencode
 from pymongo import MongoClient
@@ -22,13 +21,13 @@ from sys import platform
 from PIL import Image
 import pyPrivnote as pn
 from gtts import gTTS
+import typing
+import urbandict
 
 ctypes.windll.kernel32.SetConsoleTitleW(f'[6ix Selfbot v{SELFBOT.__version__}] | Loading...')
 
-
 with open('config.json') as f:
     config = json.load(f)
-
 token = config.get('token')
 password = config.get('password')
 prefix = config.get('prefix')
@@ -48,6 +47,11 @@ bitly_key = config.get('bitly_key')
 cat_key = config.get('cat_key')
 weather_key = config.get('weather_key')
 cuttly_key = config.get('cuttly_key')
+
+width = os.get_terminal_size().columns
+hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
+start_time = datetime.datetime.utcnow()
+loop = asyncio.get_event_loop()
 
 width = os.get_terminal_size().columns
 hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
@@ -1127,7 +1131,7 @@ async def on_message_delete(message):
                 embed.set_thumbnail(url=message.author.avatar_url)
                 embed.add_field(name="\n {}".format(message.content), value=f"Deleted by {message.author}", inline=True)
                 embed.add_field(name="LOL Nothing Can Be Deleted From Me xD", value="Deleted Message : {}".format(message.content), inline=True)
-                embed.set_footer(text=f"Logged in as : {ctx.author}", icon_url=ctx.author.avatar_url)
+                embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/722157826629304431/742874507051663430/image0.gif")
                 await message.channel.send(embed=embed)
         except Exception as e:
             print(str(e))
@@ -1158,7 +1162,7 @@ async def on_message(message):
             if message.author == SIX.user:
                 return
             embed = discord.Embed(title="AFK Responder", description=f"Hi {message.author}, {afk_message}", color=0x000000,)
-            embed.set_footer(text=f"Logged in as : {ctx.author}", icon_url=ctx.author.avatar_url)
+            embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/722157826629304431/742874507051663430/image0.gif")
             await message.channel.send(embed=embed)
     await SIX.process_commands(message)
 
@@ -1245,7 +1249,7 @@ async def _ebay_view(ctx, url, views: int):
             requests.get(url, headers=headers)
     EbayViewer(url, views)
     elapsed_time = datetime.datetime.now() - start_time
-    em = discord.Embed(title='Ebay View Bot', color= discord.Color(random.randint(0x000000, 0xFFFFFF)))
+    em = discord.Embed(title='Ebay View Bot', color= discord.Color(random.randint(0x000000)))
     em.add_field(name='Views sent', value=views, inline=False)
     em.add_field(name='Elapsed time', value=elapsed_time, inline=False)
     await ctx.send(embed=em)
@@ -2333,7 +2337,7 @@ async def kill(beaters, member: discord.Member = None):
         embed.set_footerem.set_footer(text=f"Logged in as : {ctx.author}", icon_url=ctx.author.avatar_url)
         await beaters.send(embed=embed)
         await beaters.message.delete()
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
 @SIX.command(aliases=['proxy'])
 async def proxies(ctx):
     await ctx.message.delete()
@@ -2373,6 +2377,13 @@ async def proxies(ctx):
             proxies.append(proxy)
     for p in proxies:
         file.write((p)+"\n")
+
+@SIX.command()
+async def uptime(ctx):
+    await ctx.message.delete()
+    uptime = datetime.datetime.utcnow() - start_time
+    uptime = str(uptime).split('.')[0]
+    await ctx.send(f'`'+uptime+'`')
 
 @SIX.command(description="Coronavirus Stats")
 async def covid(ctx, area: str = "Global"):
@@ -2425,13 +2436,6 @@ async def urban(ctx, *, args):
 			except:
 				embed.add_field(name="Error Occured", value="Command Aborted")
 			await ctx.send(embed=embed)
-
-@SIX.command()
-async def uptime(ctx):
-    await ctx.message.delete()
-    uptime = datetime.datetime.utcnow() - start_time
-    uptime = str(uptime).split('.')[0]
-    await ctx.send(f'`'+uptime+'`')
 
 @SIX.command()
 async def purge(ctx, amount: int):
@@ -2562,3 +2566,4 @@ async def statusoff(ctx):
     await ctx.message.delete()
 if __name__ == '__main__':
 	Init()
+
