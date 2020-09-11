@@ -1200,16 +1200,15 @@ async def decode(ctx, string):
     decoded_stuff = decoded_stuff[2:len(decoded_stuff)-1]
     await ctx.send(decoded_stuff)
 
-@SIX.command(pass_context=True)
+SIX.command(pass_context=True)
 async def paypal(beaters, amount: int):
         embed = discord.Embed(title=f"Paypal :heart:", color=0x000000)
         embed.add_field(name="`Email:`", value=f"{paypalemail}", inline=False)
         embed.add_field(name="`Amount:`", value=(amount), inline=False)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/678697731786670101/707231627897733120/1Pdw2RE.png")
-        embed.set_footerem.set_footer(text=f"Logged in as : {ctx.author}", icon_url=ctx.author.avatar_url)
+        embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/748298591243599902/749417339963047966/image0.gif")
         await beaters.send(embed=embed)
         await beaters.message.delete()
-
 
 @SIX.command(pass_context=True)
 async def cashapp(beaters, amount: int):
@@ -1217,7 +1216,7 @@ async def cashapp(beaters, amount: int):
         embed.add_field(name="`Email:`", value=f"{cashappemail}", inline=False)
         embed.add_field(name="`Amount:`", value=(amount), inline=False)
         embed.set_thumbnail(url="https://www.thebalance.com/thmb/pJiqowKcHb0U5GF72aclAdzEjWM=/865x844/filters:no_upscale():max_bytes(150000):strip_icc()/SquareCash-5a85986cc5542e003729ccb7.png")
-        embed.set_footerem.set_footer(text=f"Logged in as : {ctx.author}", icon_url=ctx.author.avatar_url)
+        embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/748298591243599902/749417339963047966/image0.gif")
         await beaters.send(embed=embed)
         await beaters.message.delete()
 
