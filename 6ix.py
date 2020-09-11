@@ -1222,6 +1222,29 @@ async def stoprnick(ctx):
 async def prefix(ctx, prefix):
     await ctx.message.delete()
     SIX.command_prefix = str(prefix)  
+	
+@SIX.command()
+async def cbomb(ctx):
+    await ctx.message.delete()
+    latency = 0
+    choices = ['brazil','europe','frankfurt','hong-kong','india','japan','russia','singapore','south-africa','sydney','us-central','us-east','us-south','us-west', 'amsterdam']
+    headers = {
+    'authorization': token,
+    'referer': 'https://discordapp.com/channels/@me/'+str(ctx.message.channel.id),
+    'accept-encoding': 'gzip, deflate, br',
+    'origin': 'https://discordapp.com/'
+    }
+    url = 'https://discordapp.com/api/v6/channels/'+str(ctx.message.channel.id)+'/call'
+    t_end = time.time() + 10
+    while time.time() < t_end:
+        x = random.choice(choices)
+        payload = {'region': x}
+        r = requests.patch(url, headers=headers, json=payload)
+        if r.status_code != 204:
+            print("[#] Being ratelimited, applying 100ms latency")
+            latency += 0.1
+            time.sleep(latency)
+        time.sleep(latency)	
 
 @SIX.command()
 async def decode(ctx, string):
