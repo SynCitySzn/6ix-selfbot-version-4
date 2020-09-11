@@ -744,9 +744,9 @@ async def help(ctx):
     em.add_field(name="`𝐇𝐀𝐂𝐊𝐈𝐍𝐆`",value="𝐨𝐛𝐯 𝐡𝐚𝐜𝐤𝐢𝐧𝐠 𝐝𝐮𝐡 -_-",inline=False)   
     em.add_field(name="`𝐖𝐈𝐙𝐙𝐈𝐍𝐆`",value="𝐟𝐨𝐫 𝐫𝐚𝐩𝐢𝐧𝐠 𝐬𝐞𝐫𝐯𝐞𝐫𝐬",inline=False)   
     em.add_field(name="`𝐧𝐬𝐟𝐰`",value="18+",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/694426956359270421/727669296289022012/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/694426956359270421/727669296289022012/image0.gif")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 @SIX.command()
 async def cmd(ctx):
@@ -793,9 +793,9 @@ async def cmd(ctx):
     em.add_field(name="`𝐮𝐩𝐩𝐞𝐫`",value="Make your message CAPS",inline=False)
     em.add_field(name="`𝐈𝐦𝐠𝐭𝐟𝐲`",value="Use lmgtfy search engine to look-up something",inline=False)
     em.add_field(name="`𝐠𝐞𝐧𝐧𝐚𝐦𝐞`",value="Generate a random name based on the server members",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 @SIX.command()
 async def gifs(ctx):
@@ -819,9 +819,9 @@ async def gifs(ctx):
     em.add_field(name="`cuddle`",value="cuddle with ur fav person",inline=False)
     em.add_field(name="`head`",value="give head UwU",inline=False)
     em.add_field(name="`kill`",value="kills the person you mention",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/694426956359270421/727669296289022012/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/694426956359270421/727669296289022012/image0.gif")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 
 @SIX.command()
@@ -846,9 +846,9 @@ async def amc(ctx):
     em.add_field(name="`Afk on or Afk off`",value="Afk Cmd",inline=False)
     em.add_field(name="`prefix`",value="changes the prefix",inline=False)
     em.add_field(name="`dlogger on/off`",value="message logger",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 
 @SIX.command()
@@ -879,9 +879,9 @@ async def fun(ctx):
     em.add_field(name="`wyr`",value="Start a 'what would you rather' topic in the chat",inline=False)
     em.add_field(name="`hack`",value="ping the user and troll them",inline=False)
     em.add_field(name="`wizz`",value="say it in servers and troll them",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 
 #credit to janky for this
@@ -894,9 +894,9 @@ async def nsfw(ctx):
     embed.add_field(name="`Bdy`", value="SENDS BIRTHDAY PARAGRAPH.\n", inline=False)
     embed.add_field(name="`Gay`", value="SENDS GAY PARAGRAPH.\n", inline=False)
     embed.add_field(name="`Esex`", value="SENDS E-SEX PARAGRAPH.\n", inline=False)
-    embed.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    embed.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=embed)
 
 @SIX.command()
@@ -955,9 +955,9 @@ async def util(ctx):
     em.add_field(name="`btc`",value="Display current Bitcoin price",inline=False)
     em.add_field(name="`banner`",value="Shows you the server banner",inline=False)
     em.add_field(name="`renamechannels`",value="renames server channels",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 @SIX.command()
 async def hacking(ctx):
@@ -975,9 +975,9 @@ async def hacking(ctx):
     em.add_field(name="`login`",value="Allows you to mass-login in bot/user tokens [Choices can be: user and bot]",inline=False)
     em.add_field(name="`botlogin`",value="Allows you to mass-login in bot/user tokens [Choices can be: user and bot]",inline=False)
     em.add_field(name="`dlfriends`",value="remove all the people in your friend list",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 @SIX.command()
 async def wizzing(ctx):
@@ -995,9 +995,9 @@ async def wizzing(ctx):
     em.add_field(name="`𝐦𝐚𝐬𝐬𝐔𝐧`",value="Unban every member",inline=False)
     em.add_field(name="`𝐫𝐞𝐧𝐚𝐦𝐞𝐜𝐡𝐚𝐧𝐧𝐞𝐥𝐬`",value="re name every channel in the server",inline=False)
     em.add_field(name="`𝐦𝐚𝐬𝐬𝐝𝐦𝐚𝐥𝐥`",value="dm everyone in your friend list",inline=False)
-    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/750125977102975046/image0.gif")
+    em.set_image(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     em.set_footer(text=f"6ix selfbot", icon_url=ctx.author.avatar_url)
-    em.set_thumbnail(url="https://cdn.discordapp.com/avatars/508093469089202177/a_cd2902b2576b2565e5f4dd26d3b24e9b.gif?size=128")
+    em.set_thumbnail(url="https://cdn.discordapp.com/attachments/722157826629304431/753771704815190147/image0.gif")
     await ctx.send(embed=em)
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -1259,7 +1259,7 @@ async def paypal(beaters, amount: int):
         embed.add_field(name="`Email:`", value=f"{paypalemail}", inline=False)
         embed.add_field(name="`Amount:`", value=(amount), inline=False)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/678697731786670101/707231627897733120/1Pdw2RE.png")
-        embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/748298591243599902/749417339963047966/image0.gif")
+        embed.set_footer(text="6ix Selfbot <3", icon_url=ctx.author.avatar_url)
         await beaters.send(embed=embed)
         await beaters.message.delete()
 
@@ -1269,7 +1269,7 @@ async def cashapp(beaters, amount: int):
         embed.add_field(name="`Email:`", value=f"{cashappemail}", inline=False)
         embed.add_field(name="`Amount:`", value=(amount), inline=False)
         embed.set_thumbnail(url="https://www.thebalance.com/thmb/pJiqowKcHb0U5GF72aclAdzEjWM=/865x844/filters:no_upscale():max_bytes(150000):strip_icc()/SquareCash-5a85986cc5542e003729ccb7.png")
-        embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/748298591243599902/749417339963047966/image0.gif")
+        embed.set_footer(text="6ix Selfbot <3", icon_url=ctx.author.avatar_url)
         await beaters.send(embed=embed)
         await beaters.message.delete()
 
@@ -1398,7 +1398,19 @@ async def av(ctx, *, user: discord.Member = None):
     em.set_author(name=str(user)+"'s pfp")
     em.set_image(url=user.avatar_url)
     await ctx.send(embed=em)
-    
+
+@SIX.command(pass_context=True)
+async def vpn(beaters):
+        embed = discord.Embed(title="6ixSec VPN Plans", description="```SixSec Is A VPN Company That Cares Fully About Your Privacy We Are Here To Stop DDoS Attack With Our Anti-DDoS Protection And Our Custom Firewalls, We Provide A No Log Policy We Provide Locations That Fit You Best For Gaming Or Web Surfing, We Are Constantly Updating Our Firewalls To Block New DDoS Attack Methods.```", color=0x000000)
+        embed.add_field(name="__Prices__", value="``Contact Me Or Kills For Special Plan``",inline=False)       
+        embed.add_field(name="`1 Month`", value="**$10.**", inline=False)
+        embed.add_field(name="`3 Months`", value="**$25.**", inline=False)
+        embed.add_field(name="`Reseller`", value="**$35. Split Money 50/50**", inline=False) 
+        embed.add_field(name="`Lifetime`", value="**$100.**", inline=False)
+        embed.add_field(name="__Payment Options__", value="``We Accept, Paypal,Cashapp,Venmo.``", inline=False)   
+        embed.set_footer(text="Copyright © Devil#0420 ", icon_url=ctx.author.avatar_url)
+        await beaters.send(embed=embed)
+        await beaters.message.delete()    
 
 @SIX.command(aliases=['ri', 'role'])
 async def roleinfo(ctx, *, role: discord.Role):
@@ -2337,7 +2349,7 @@ async def kill(beaters, member: discord.Member = None):
         member = beaters.author if not member else member
         embed = discord.Embed(title=f"get killed {member}", description="", color=0x000000)
         embed.set_image(url="https://thumbs.gfycat.com/BossyMenacingCavy-small.gif"),
-        embed.set_footer(text="6ix Selfbot <3", icon_url="https://cdn.discordapp.com/attachments/748298591243599902/749417339963047966/image0.gif")
+        embed.set_footer(text="6ix Selfbot <3", icon_url=ctx.author.avatar_url)
         await beaters.send(embed=embed)
         await beaters.message.delete()
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
