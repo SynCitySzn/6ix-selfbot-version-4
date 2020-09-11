@@ -735,6 +735,7 @@ async def cmd(ctx):
     em = discord.Embed(color= discord.Color(random.randint(0x000000, 0xFFFFFF)))
     em.set_author(name="𝐂𝐌𝐃")
     em.add_field(name="`𝐚𝐝𝐦𝐢𝐧`",value="Shows How Many Admin You Have In Servers",inline=False)
+    em.add_field(name="`𝐩𝐢𝐧𝐠`",value="Shows your ping",inline=False)
     em.add_field(name="`𝐮𝐫𝐛𝐚𝐧`",value="urbans anything bruh",inline=False)
     em.add_field(name="`𝐜𝐨𝐯𝐢𝐝`",value="shows the cases of covid-19",inline=False)
     em.add_field(name="`𝐚𝐛𝐨𝐮𝐭`",value="Shows About The Selfbot",inline=False)
@@ -1217,6 +1218,9 @@ async def stoprnick(ctx):
     global cycling
     cycling = False
 
+@SIX.command()
+async def ping(ctx):
+    await ctx.message.edit(content=f":ping_pong:`Ping: {round(SIX.latency * 1000)}ms`")
 
 @SIX.command()
 async def prefix(ctx, prefix):
