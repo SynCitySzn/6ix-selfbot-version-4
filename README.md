@@ -3,6 +3,6 @@
 
 If there's any erros lmk my cord is elari#0001 if i change it heres my id <@651954313668722693>
 
- ![Screenshot](image.png)
+ ![Screenshot](https://i.imgur.com/Md15FNN.png)
  
 **SKIDS tros LOL**
